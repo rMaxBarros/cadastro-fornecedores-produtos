@@ -1,0 +1,20 @@
+/* "caixa" do fieldset */
+fieldset {
+    border: 2px solid #999 !important;
+    border-radius: 8px;
+    padding: 20px 15px 10px 15px;
+}
+
+legend {
+    width: auto; 
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-row {
+    display: flex;
+    align-items: center;
+}

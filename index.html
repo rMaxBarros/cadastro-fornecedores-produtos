@@ -14,6 +14,7 @@
 
     <div class="fluig-style-guide">
         <form name="form" role="form">
+            <!-- Form para Dados do Fornecedor -->
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Dados do Fornecedor</h3>
@@ -218,9 +219,82 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <!-- Form para produtos -->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                <h3 class="panel-title">Produtos</h3>
+            </div>
+            <div class="panel-body">
+
+            <div class="row product-row">
+                <div class="col-md-1 text-center">
+                    <button type="button" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
+
+                <div class="col-md-11">
+                    <fieldset>
+                        <legend>Produto - 1</legend>
+
+                        <div class="row">
+                            <div class="col-md-2 text-center">
+                                <span class="glyphicon glyphicon-gift" style="font-size: 6em; color: #ccc;"></span>
+                            </div>
+
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="produto_1">Produto</label>
+                                            <input type="text" class="form-control" id="produto_1" name="produto_1" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="unidade_1">UND. Medida</label>
+                                            <select class="form-control" id="unidade_1" name="unidade_1" required>
+                                                <option value=""></option>
+                                                <option value="UN">Unidade</option>
+                                                <option value="CX">Caixa</option>
+                                                <option value="PC">Peça</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="quantidade_1">QTDDE. em Estoque</label>
+                                            <input type="number" class="form-control" id="quantidade_1" name="quantidade_1" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="valorUnitario_1">Valor Unitário</label>
+                                            <input type="text" class="form-control" id="valorUnitario_1" name="valorUnitario_1" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="valorTotal_1">Valor Total</label>
+                                            <input type="text" class="form-control" id="valorTotal_1" name="valorTotal_1" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    <div class="panel-footer">
+        <button type="button" class="btn btn-success btn-lg btn-block">Adicionar Produto</button>
+    </div>
+</div>
         </form>
     </div>
 
