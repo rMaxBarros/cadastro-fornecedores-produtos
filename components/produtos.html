@@ -4,73 +4,77 @@
     </div>
     <div class="panel-body">
 
-        <div class="row product-row">
-            <div class="col-md-1 text-center">
-                <!-- <button type="button" class="btn btn-danger">
-                    <span class="glyphicon glyphicon-trash"></span>
-                </button> -->
-            </div>
+        <div id="lista-produtos">
+            <div class="row product-row">
+                <div class="col-md-1 text-center">
+                    <button type="button" class="btn btn-danger" disabled title="Você deve inserir ao menos um produto">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                </div>
 
-            <div class="col-md-11">
-                <fieldset>
-                    <legend>__PRODUTO__</legend>
+                <div class="col-md-11">
+                    <fieldset>
+                        <legend>Produto - 1</legend>
 
-                    <div class="row">
-                        <div class="col-md-2 text-center">
-                            <span class="glyphicon glyphicon-gift" style="font-size: 6em; color: #ccc;"></span>
-                        </div>
+                        <div class="row">
+                            <div class="col-md-2 text-center">
+                                <span class="glyphicon glyphicon-gift" style="font-size: 6em; color: #ccc;"></span>
+                            </div>
 
-                        <div class="col-md-10">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="produto___ID__">Produto</label>
-                                        <input type="text" class="form-control" id="produto___ID__" name="produto___ID__"
-                                            required>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="produto___ID__">Produto</label>
+                                            <input type="text" class="form-control" id="produto___ID__"
+                                                name="produto___ID__" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="unidade___ID__">UND. Medida</label>
+                                            <select class="form-control" id="unidade___ID__" name="unidade___ID__"
+                                                required>
+                                                <option value=""></option>
+                                                <option value="UN">Unidade</option>
+                                                <option value="CX">Caixa</option>
+                                                <option value="PC">Peça</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="quantidade___ID__">QTDDE. em Estoque</label>
+                                            <input type="number" class="form-control" id="quantidade___ID__"
+                                                name="quantidade___ID__" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="valorUnitario___ID__">Valor Unitário</label>
+                                            <input type="text" class="form-control" id="valorUnitario___ID__"
+                                                name="valorUnitario___ID__" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="valorTotal___ID__">Valor Total</label>
+                                            <input type="text" class="form-control" id="valorTotal___ID__"
+                                                name="valorTotal___ID__" readonly>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="unidade___ID__">UND. Medida</label>
-                                        <select class="form-control" id="unidade___ID__" name="unidade___ID__" required>
-                                            <option value=""></option>
-                                            <option value="UN">Unidade</option>
-                                            <option value="CX">Caixa</option>
-                                            <option value="PC">Peça</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label for="quantidade___ID__">QTDDE. em Estoque</label>
-                                        <input type="number" class="form-control" id="quantidade___ID__" name="quantidade___ID__"
-                                            required>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="valorUnitario___ID__">Valor Unitário</label>
-                                        <input type="text" class="form-control" id="valorUnitario___ID__"
-                                            name="valorUnitario___ID__" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="form-group">
-                                        <label for="valorTotal___ID__">Valor Total</label>
-                                        <input type="text" class="form-control" id="valorTotal___ID__" name="valorTotal___ID__"
-                                            readonly>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
+                </div>
             </div>
         </div>
     </div>
     <div class="panel-footer">
-        <button type="button" class="btn btn-success btn-lg btn-block">Adicionar Produto</button>
+        <button type="button" id="btnAdicionarProduto" class="btn btn-success btn-lg btn-block">Adicionar
+            Produto</button>
     </div>
 </div>
