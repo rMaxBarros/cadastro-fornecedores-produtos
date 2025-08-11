@@ -1,15 +1,5 @@
-// Garante que o código só será executado depois que a página estiver totalmente carregada
 $(document).ready(function () {
-
     let productIndex = 1;
-
-    // Função para carregar os componentes HTML
-    function carregarComponentes() {
-        // Carrega o formulário de fornecedor, produtos e anexos da div #fornecedor-container
-        $('#fornecedor-container').load('components/fornecedor.html');
-        $('#produtos-container').load('components/produtos.html');
-        $('#anexos-container').load('components/anexos.html');
-    }
 
     // Função para adicionar um novo card de produto na tela
     function adicionarProduto() {
@@ -43,7 +33,5 @@ $(document).ready(function () {
         $(this).closest('.product-row').remove();
         productIndex--;
     });
-
-    carregarComponentes();
 
 });

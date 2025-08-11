@@ -5,24 +5,15 @@
     <div class="panel-body">
         <fieldset>
             <legend>Itens</legend>
-
-            <div class="row attachment-row">
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-danger" title="Excluir">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                    <button type="button" class="btn btn-info" title="Visualizar">
-                        <span class="glyphicon glyphicon-eye-open"></span>
-                    </button>
-                </div>
-                <div class="col-md-10">
-                    <span class="doc-name">Documento anexo 1</span>
-                </div>
+            
+            <div id="lista-anexos">
+                <p class="text-muted" id="nenhum-anexo-mensagem">Você deve inserir pelo menos um anexo.</p>
             </div>
         </fieldset>
     </div>
     <div class="panel-footer">
-        <button type="button" class="btn btn-success btn-lg btn-block">
+        <input type="file" id="inputAnexo" style="display: none;" multiple>
+        <button type="button" id="btnIncluirAnexo" class="btn btn-success btn-lg btn-block">
             Incluir Anexo
         </button>
     </div>
