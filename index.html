@@ -37,6 +37,34 @@
     <script src="js/fornecedor.js"></script>
     <script src="js/produtos.js"></script>
     <script src="js/anexos.js"></script>
+
+    <!-- Modal de envio -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="feedbackModalTitle">Aguarde</h4>
+                </div>
+                <div class="modal-body text-center" id="feedbackModalBody">
+                    <div id="loadingState">
+                        <p>Enviando dados do fornecedor...</p>
+                        <div class="fluig-loading-extended">
+                            <div class="fluig-loading-extended-animation"></div>
+                            <span class="fluig-loading-extended-text">Loading</span>
+                        </div>
+                    </div>
+                    <div id="successState" style="display: none;">
+                        <span class="fluigicon fluigicon-check-sign fluigicon-5x text-success"></span>
+                        <p class="text-success" style="margin-top: 15px;">Fornecedor salvo com sucesso!</p>
+                        <p>O JSON com os dados foi exibido no console do navegador (F12).</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
